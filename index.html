@@ -22,26 +22,25 @@
     </style>
 </head>
 <body class="bg-light-gray">
-   <!-- Header -->
-    <header class="bg-light-purple shadow">
+    <!-- Header -->
+    <header id="navbar" class="bg-gradient-to-r text-white shadow sticky-nav">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-white">FormEase</a>
-            <nav class="hidden md:flex space-x-4">
-                <a href="#" class="text-white hover:text-light-purple">Home</a>
-                <a href="#" class="text-white hover:text-light-purple">Features</a>
-                <a href="#" class="text-white hover:text-light-purple">Pricing</a>
-                <a href="#" class="text-white hover:text-light-purple">About</a>
-                <a href="#" class="text-white hover:text-light-purple">Contact</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="nav-link text-white hover:text-light-purple">Home</a>
+                <a href="#" class="nav-link text-white hover:text-light-purple">Features</a>
+                <a href="#" class="nav-link text-white hover:text-light-purple">Pricing</a>
+                <a href="#" class="nav-link text-white hover:text-light-purple">About</a>
+                <a href="#" class="nav-link text-white hover:text-light-purple">Contact</a>
             </nav>
-            <div class="flex space-x-4">
-                <a href="#" class="bg-light-purple text-white px-3 py-2 rounded hover:bg-blue-secondary">Sign Up</a>
-                <a href="#" class="bg-gray-300 text-gray-800 px-3 py-2 rounded">Log In</a>
+            <div class="flex space-x-6">
+                <a href="#" class="btn-signup bg-light-purple text-white px-4 py-2 rounded hover:bg-blue-secondary">Sign Up</a>
+                <a href="#" class="btn-login bg-gray-300 text-gray-800 px-4 py-2 rounded">Log In</a>
             </div>
         </div>
     </header>
-
     <!-- Hero Section -->
-    <section class="bg-white text-white py-20">
+    <section class="bg-light-purple text-white py-20">
         <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
                 <h1 class="text-4xl font-bold mb-4">Create Forms with Ease</h1>
@@ -49,7 +48,7 @@
                 <a href="#" class="bg-white text-purple-primary px-6 py-3 rounded hover:bg-blue-secondary hover:text-white">Get Started for Free</a>
             </div>
             <div class="lg:w-1/2">
-                <img src="assets/hero.png" alt="Hero Image" class="mx-auto w-full lg:w-3/4 h-auto">
+                <img src="hero.png" alt="Hero Image" class="mx-auto w-full lg:w-3/4 h-auto">
             </div>
         </div>
     </section>
@@ -253,6 +252,15 @@
             element.classList.remove('bg-purple-100');
         });
     });
+    // Change navbar style on scroll
+    window.onscroll = function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
 </script>
 </body>
 </html>
