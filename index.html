@@ -40,7 +40,7 @@
     <!-- Hero Section -->
     <section class="bg-purple-primary text-white py-20">
         <div class="container mx-auto px-6 text-center">
-            <img src="hero.png" alt="Hero Image" class="mx-auto mb-8">
+        <img src="hero.png" alt="Hero Image" class="mx-auto mb-8 w-1/2 h-auto">
             <h1 class="text-4xl font-bold mb-4">Create Forms with Ease</h1>
             <p class="text-lg mb-8">Simple, intuitive, and powerful form builder to streamline your data collection.</p>
             <a href="#" class="bg-white text-purple-primary px-6 py-3 rounded hover:bg-blue-secondary hover:text-white">Get Started for Free</a>
@@ -48,41 +48,43 @@
     </section>
 
     <!-- Features Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-8">Why Choose FormEase?</h2>
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white rounded shadow p-6">
-                        <img src="drag_drop.png" alt="Drag and Drop" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-bold mb-2">Drag and Drop Builder</h3>
-                        <p>Design forms effortlessly with our intuitive drag and drop interface.</p>
-                    </div>
+  <!-- Features Section -->
+<section class="py-20 bg-light-gray">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">Why Choose FormEase?</h2>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <div class="bg-white rounded shadow p-6 hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                    <img src="drag_drop.png" alt="Drag and Drop" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Drag and Drop Builder</h3>
+                    <p>Design forms effortlessly with our intuitive drag and drop interface.</p>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white rounded shadow p-6">
-                        <img src="customize.png" alt="Customizable" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-bold mb-2">Fully Customizable</h3>
-                        <p>Personalize your forms to match your brand and needs.</p>
-                    </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <div class="bg-white rounded shadow p-6 hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                    <img src="customize.png" alt="Customizable" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Fully Customizable</h3>
+                    <p>Personalize your forms to match your brand and needs.</p>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white rounded shadow p-6">
-                        <img src="api.png" alt="Integration" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-bold mb-2">Seamless Integrations</h3>
-                        <p>Connect with popular tools like Google Sheets, Slack, and more.</p>
-                    </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <div class="bg-white rounded shadow p-6 hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                    <img src="api.png" alt="Integration" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Seamless Integrations</h3>
+                    <p>Connect with popular tools like Google Sheets, Slack, and more.</p>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white rounded shadow p-6">
-                        <img src="analytics.png" alt="Analytics" class="w-16 h-16 mx-auto mb-4">
-                        <h3 class="text-xl font-bold mb-2">Real-Time Analytics</h3>
-                        <p>Get insights and make data-driven decisions with real-time analytics.</p>
-                    </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <div class="bg-white rounded shadow p-6 hover:shadow-lg transition-shadow duration-300 ease-in-out">
+                    <img src="analytics.png" alt="Analytics" class="w-16 h-16 mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Real-Time Analytics</h3>
+                    <p>Get insights and make data-driven decisions with real-time analytics.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- How It Works Section -->
     <section class="bg-light-purple py-20">
@@ -208,5 +210,16 @@
             </div>
         </div>
     </footer>
+    <script>
+    document.querySelectorAll('.feature-card').forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.classList.add('shadow-2xl');
+        });
+        card.addEventListener('mouseout', () => {
+            card.classList.remove('shadow-2xl');
+        });
+    });
+</script>
+
 </body>
 </html>
