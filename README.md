@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a landing page for FormEase, a user-friendly, customizable form builder designed to streamline data collection. The landing page is built with HTML and TailwindCSS, following a vibrant yellow theme inspired by Sketch2Scheme.
+This project is a landing page for FormEase, a user-friendly, customizable form builder designed to streamline data collection. The landing page is built with HTML and TailwindCSS.
 
 ## Features
 
